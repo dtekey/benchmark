@@ -1,150 +1,83 @@
-/*     */
+
 package com.tangtang.trade.hry.oauth.user.model;
-/*     */
-/*     */
 
 import hry.core.mvc.model.BaseModel;
 
 import javax.persistence.*;
 import java.util.Date;
 
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
-/*     */
+
+
 @Table(name = "app_organization")
-/*     */ public class AppOrganization
-        /*     */ extends BaseModel
-        /*     */ {
-    /*     */
+ public class AppOrganization
+extends BaseModel
+        {
+
     @Id
-    /*     */
+
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    /*     */
+
     @Column(name = "id", unique = true, nullable = false)
-    /*     */ private Long id;
-    /*     */
+    private Long id;
+    
     @Column(name = "type")
-    /*     */ private String type;
-    /*     */
+ private String type;
+    
     @Column(name = "pid")
     /*     */ private Long pid;
     /*     */
     @Column(name = "isDelete")
     /*  48 */ private String isDelete = "0";
-    /*     */
-    /*     */
-    /*     */
+ 
     @Column(name = "orderNo")
     /*  52 */ private String orderNo = "1";
-    /*     */
-    /*     */
-    /*     */
-    /*     */
+ 
     @Column(name = "logoPath")
     /*     */ private String logoPath;
-    /*     */
-    /*     */
-    /*     */
-    /*     */
+
     @Column(name = "name")
     /*     */ private String name;
-    /*     */
-    /*     */
-    /*     */
+
     @Column(name = "shortName")
     /*     */ private String shortName;
-    /*     */
-    /*     */
-    /*     */
+
     @Column(name = "companyNo")
     /*     */ private String companyNo;
-    /*     */
-    /*     */
-    /*     */
+
     @Column(name = "englishName")
     /*     */ private String englishName;
-    /*     */
-    /*     */
-    /*     */
+
     @Column(name = "person")
-    /*     */ private String person;
-    /*     */
-    /*     */
-    /*     */
+   private String person;
+
     @Column(name = "mobile")
-    /*     */ private String mobile;
-    /*     */
-    /*     */
-    /*     */
+    private String mobile;
+
     @Column(name = "fax")
-    /*     */ private String fax;
-    /*     */
-    /*     */
-    /*     */
+  private String fax;
+
     @Column(name = "setDate")
-    /*     */ private Date setDate;
-    /*     */
-    /*     */
-    /*     */
+  private Date setDate;
+
     @Column(name = "address")
-    /*     */ private String address;
-    /*     */
-    /*     */
-    /*     */
+    private String address;
+
+
     @Column(name = "postalcode")
-    /*     */ private String postalcode;
-    /*     */
-    /*     */
-    /*     */
+   private String postalcode;
+
     @Column(name = "remark")
     /*     */ private String remark;
 
-    /*     */
-    /*     */
-    /*     */
-    /*     */
+
     public Long getId()
-    /*     */ {
-        /* 108 */
+{
+   
         return this.id;
-        /*     */
+     
     }
 
-    /*     */
-    /*     */
-    /*     */
-    /*     */
-    /*     */
-    /*     */
+
     public void setId(Long id)
     /*     */ {
         /* 117 */
@@ -269,12 +202,7 @@ import java.util.Date;
         /*     */
     }
 
-    /*     */
-    /*     */
-    /*     */
-    /*     */
-    /*     */
-    /*     */
+
     public void setEnglishName(String englishName)
     /*     */ {
         /* 207 */
@@ -282,12 +210,6 @@ import java.util.Date;
         /*     */
     }
 
-    /*     */
-    /*     */
-    /*     */
-    /*     */
-    /*     */
-    /*     */
     public String getPerson()
     /*     */ {
         /* 216 */
@@ -295,12 +217,6 @@ import java.util.Date;
         /*     */
     }
 
-    /*     */
-    /*     */
-    /*     */
-    /*     */
-    /*     */
-    /*     */
     public void setPerson(String person)
     /*     */ {
         /* 225 */
